@@ -4,14 +4,14 @@
   "category": ["player-guide"],
   "context": "client",
   "date": "2014/12/31",
-  "description": "The best PA mod ever.",
-  "display_name": "Player Guide Extensions",
+  "description": "Make additional player guide topics available from supporting server mods.",
+  "display_name": "Server Mod Player Guide",
   "forum": null,
-  "identifier": "com.wondible.pa.player_guide_ex",
+  "identifier": "com.wondible.pa.server_mod_player_guide",
   "priority": 100,
   "scenes": {
     "guide": [
-      "coui://ui/mods/player_guide_ex/guide.js"
+      "coui://ui/mods/server_mod_player_guide/guide.js"
     ]
   },
   "signature": "not yet implemented",
