@@ -7,7 +7,7 @@
   "description": "Make additional player guide topics available from supporting server mods.",
   "display_name": "Server Mod Player Guide",
   "forum": null,
-  "identifier": "com.wondible.pa.server_mod_player_guide",
+  "identifier": "com.wondible.pa.server_mod_player_guide.client",
   "priority": 100,
   "scenes": {
     "guide": [
