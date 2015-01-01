@@ -12,6 +12,9 @@
   "scenes": {
     "guide": [
       "coui://ui/mods/server_mod_player_guide/guide.js"
+    ],
+    "new_game": [
+      "coui://ui/mods/server_mod_player_guide/new_game.js"
     ]
   },
   "signature": "not yet implemented",
