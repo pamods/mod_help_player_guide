@@ -1,0 +1,20 @@
+{
+  "author": "wondible",
+  "build": "76557",
+  "category": ["player-guide"],
+  "context": "client",
+  "date": "2014/12/31",
+  "description": "The best PA mod ever.",
+  "display_name": "Player Guide Extensions",
+  "forum": null,
+  "identifier": "com.wondible.pa.player_guide_ex",
+  "priority": 100,
+  "scenes": {
+    "guide": [
+      "coui://ui/mods/player_guide_ex/guide.js"
+    ]
+  },
+  "signature": "not yet implemented",
+  "version": "0.1.0"
+}
+
