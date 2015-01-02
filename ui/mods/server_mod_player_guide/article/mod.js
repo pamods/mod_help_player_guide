@@ -8,7 +8,6 @@ $(document).ready(function () {
   model.attributes.forEach(function(attr) {
     model[attr.name] = attr.value
   })
-  console.log(model)
 
   // Activates knockout.js
   ko.applyBindings(model);
