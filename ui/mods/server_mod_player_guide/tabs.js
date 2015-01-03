@@ -1,8 +1,21 @@
 define(function() {
   return function(tabs) {
     model.playerGuideModTabs = tabs
+
+    model.playerGuideModId = function(title) {
+      return title.replace(/\W/, '_')
+    }
     model.playerGuideModHref = function(title) {
-      return '#' + title
+      return '#' + model.playerGuideModId(title)
+    }
+    model.playerGuideModNavigation = function(title) {
+      return title.replace(/\W/, '_') + 'navigation'
+    }
+    model.showTab = function(articles) {
+      return articles().length > 0
+    }
+    model.dump = function(obj) {
+      return JSON.stringify(obj)
     }
 
     var $pills = $('.nav-pills')
@@ -16,14 +29,10 @@ define(function() {
         '</div>')
     }
     var $tabPills = $('<div><!-- ko foreach: playerGuideModTabs -->'+
-      '<li><a data-toggle="pill" data-bind="click_sound: \'default\', rollover_sound: \'default\', attr: {href: $root.playerGuideModHref(title)}, text: title"></a></li>'+
+      '<li><a data-toggle="pill" data-bind="click_sound: \'default\', rollover_sound: \'default\', attr: {href: $root.playerGuideModHref(title)}, visible: articles().length > 0, text: title"></a></li>'+
       '<!-- /ko --></div>')
     ko.applyBindings(model, $tabPills[0])
     $('.nav-pills').append($tabPills.children())
-
-    model.playerGuideModNavigation = function(title) {
-      return title + 'navigation'
-    }
 
     var $pane = $(
       '<div><!-- ko foreach: playerGuideModTabs -->' +
@@ -32,11 +41,12 @@ define(function() {
     )
     $pane.find('#basics')
       .removeAttr('id')
-      .attr('data-bind', "attr: {id: title}")
+      .attr('data-bind', "attr: {id: $root.playerGuideModId(title)}")
     $pane.find('.active').removeClass('active')
-    $pane.find('[name=navigation]').attr('data-bind', "attr{name: $root.playerGuideModNavigation(title)}").attr('src', '')
+    $pane.find('[name=navigation]')
+      .attr('src', '')
+      .attr('data-bind', "attr: {name: $root.playerGuideModNavigation(title)}")
     $pane.find('ul').replaceWith('<ul data-bind="foreach: articles"><li><a class="btn_std_ix" target="navigation" data-bind="attr: {target: $root.playerGuideModNavigation($parent.title), href: url}, text: title"></a></li></ul>')
-    console.log(model.playerGuideModTabs())
     ko.applyBindings(model, $pane[0])
     $('.tab-content').append($pane.children())
   }

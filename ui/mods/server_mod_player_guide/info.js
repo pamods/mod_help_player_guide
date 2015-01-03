@@ -1,7 +1,10 @@
 define(function() {
-  var articles = ko.observable({})
-  var addArticles = function(t) {
-    articles(_.extend(articles(), t))
+  var articles = {
+    client: ko.observable({}),
+    server: ko.observable({}),
+  }
+  var addArticles = function(topics, context) {
+    articles[context](_.extend(articles[context](), topics))
   }
   var specs = ko.observable({})
   var addSpec = function(identifier, s) {
@@ -19,31 +22,31 @@ define(function() {
 
   var record = function(mod) {
     return function(data) {
-      console.log(data)
+      //console.log(data)
       try {
         var ext = JSON.parse(data)
         if (ext) {
           addSpec(mod.identifier, ext)
           if (ext.articles) {
-            addArticles(ext.articles)
+            addArticles(ext.articles, mod.context)
           } else {
             console.log('no help articles found in', this.url)
-            addArticles(defaultArticle(mod))
+            addArticles(defaultArticle(mod), mod.context)
           }
         } else {
           console.warn('did not parse', this.url)
-          addArticles(defaultArticle(mod))
+          addArticles(defaultArticle(mod), mod.context)
         }
       } catch(e) {
         console.error('json parsing error in file', this.url, e.message)
-        addArticles(defaultArticle(mod))
+        addArticles(defaultArticle(mod), mod.context)
       }
     }
   }
   var failure = function(mod) {
     return function() {
       //console.log('no help found for', this.url)
-      addArticles(defaultArticle(mod))
+      addArticles(defaultArticle(mod), mod.context)
     }
   }
   var loadModHelp = function(mod) {
