@@ -1,12 +1,12 @@
 (function() {
   var config = require.s.contexts._.config
   config.waitSeconds = 0
-  config.paths.server_mod_player_guide = 'coui://ui/mods/server_mod_player_guide'
+  config.paths.mod_help_player_guide = 'coui://ui/mods/mod_help_player_guide'
 })()
 
 require([
-  'server_mod_player_guide/info',
-  'server_mod_player_guide/tabs',
+  'mod_help_player_guide/info',
+  'mod_help_player_guide/tabs',
 ], function(info, tabs) {
   $('.col_1').css('overflow-y', 'auto')
 

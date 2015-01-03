@@ -16,7 +16,7 @@ define(function() {
       return [key, encodeURIComponent(mod[key])].join('=')
     })
     var article = {}
-    article[mod.display_name] = "coui://ui/mods/server_mod_player_guide/article/mod.html?" + attrs.join('&')
+    article[mod.display_name] = "coui://ui/mods/mod_help_player_guide/article/mod.html?" + attrs.join('&')
     return article
   }
 

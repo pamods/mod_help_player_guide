@@ -5,16 +5,16 @@
   "context": "client",
   "date": "2014/12/31",
   "description": "Make additional player guide topics available from supporting server mods.",
-  "display_name": "Server Mod Player Guide",
+  "display_name": "Mod Help Player Guide",
   "forum": null,
-  "identifier": "com.wondible.pa.server_mod_player_guide.client",
+  "identifier": "com.wondible.pa.mod_help_player_guide.client",
   "priority": 100,
   "scenes": {
     "guide": [
-      "coui://ui/mods/server_mod_player_guide/guide.js"
+      "coui://ui/mods/mod_help_player_guide/guide.js"
     ],
     "new_game": [
-      "coui://ui/mods/server_mod_player_guide/new_game.js"
+      "coui://ui/mods/mod_help_player_guide/new_game.js"
     ]
   },
   "signature": "not yet implemented",

@@ -1,7 +1,7 @@
 var prompt = require('prompt')
 prompt.start()
 
-var modPath = '../../server_mods/com.wondible.pa.server_mod_player_guide.server/'
+var modPath = '../../server_mods/com.wondible.pa.mod_help_player_guide.server/'
 var stream = 'stable'
 var media = require('./lib/path').media(stream)
 console.log(media)
@@ -58,7 +58,7 @@ module.exports = function(grunt) {
         ],
         options: {
           process: function(contents, path) {
-            return contents.replace('// inject per scene mods', 'loadMods(["coui://ui/mods/server_mod_player_guide/new_game.js"])')
+            return contents.replace('// inject per scene mods', 'loadMods(["coui://ui/mods/mod_help_player_guide/new_game.js"])')
           }
         }
       },
@@ -75,7 +75,7 @@ module.exports = function(grunt) {
         ],
         options: {
           process: function(contents, path) {
-            return contents.replace('// inject per scene mods', 'loadMods(["coui://ui/mods/server_mod_player_guide/guide.js"])')
+            return contents.replace('// inject per scene mods', 'loadMods(["coui://ui/mods/mod_help_player_guide/guide.js"])')
           }
         }
       }
