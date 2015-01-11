@@ -58,7 +58,7 @@ module.exports = function(grunt) {
         ],
         options: {
           process: function(contents, path) {
-            return contents.replace('// inject per scene mods', 'loadMods(["coui://ui/mods/mod_help_player_guide/new_game.js"])')
+            return contents.replace('// inject per scene mods', 'if (!scene_mod_list["new_game"] || scene_mod_list["new_game"].indexOf("coui://ui/mods/mod_help_player_guide/new_game.js") == -1) loadMods(["coui://ui/mods/mod_help_player_guide/new_game.js"])')
           }
         }
       },
@@ -75,7 +75,7 @@ module.exports = function(grunt) {
         ],
         options: {
           process: function(contents, path) {
-            return contents.replace('// inject per scene mods', 'loadMods(["coui://ui/mods/mod_help_player_guide/guide.js"])')
+            return contents.replace('// inject per scene mods', 'if (!scene_mod_list["guide"] || scene_mod_list["guide"].indexOf("coui://ui/mods/mod_help_player_guide/guide.js") == -1) loadMods(["coui://ui/mods/mod_help_player_guide/guide.js"])')
           }
         }
       }
