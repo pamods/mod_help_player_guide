@@ -50,7 +50,7 @@ define(function() {
     }
   }
   var loadModHelp = function(mod) {
-    var url = 'coui://'+mod.identifier+'/server_mod_help.json'
+    var url = 'coui://'+mod.identifier+'/mod_help.json'
     $.ajax({
       url: url,
       success: record(mod),
