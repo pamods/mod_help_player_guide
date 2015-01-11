@@ -3,10 +3,10 @@
   "build": "76557",
   "category": ["player-guide"],
   "context": "client",
-  "date": "2014/12/31",
+  "date": "2014/01/11",
   "description": "Make additional player guide topics available from supporting server mods.",
   "display_name": "Mod Help Player Guide",
-  "forum": null,
+  "forum": "https://forums.uberent.com/threads/wip-client-server-mod-help-player-guide.67197/",
   "identifier": "com.wondible.pa.mod_help_player_guide.client",
   "priority": 100,
   "scenes": {
