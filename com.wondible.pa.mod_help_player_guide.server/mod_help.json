@@ -1,5 +1,8 @@
 {
   "articles": {
-    " Mod Help Player Guide (Server)": "coui://ui/mods/mod_help_player_guide/article/mod_help_player_guide.html"
+    "Mod Help Player Guide (Server)": "coui://ui/mods/mod_help_player_guide/article/mod_help_player_guide.html"
+  },
+  "topics": {
+    "mod help player guide": "Server mods may have help articles.  UI refresh (F5 default) to access the player guide.")
   }
 }
