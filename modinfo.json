@@ -1,9 +1,9 @@
 {
   "author": "wondible",
-  "build": "76557",
+  "build": "76766",
   "category": ["player-guide"],
   "context": "client",
-  "date": "2014/01/11",
+  "date": "2014/01/21",
   "description": "Make additional player guide topics available from supporting server mods.",
   "display_name": "Mod Help Player Guide",
   "forum": "https://forums.uberent.com/threads/wip-client-server-mod-help-player-guide.67197/",
@@ -18,6 +18,6 @@
     ]
   },
   "signature": "not yet implemented",
-  "version": "0.1.1"
+  "version": "0.2.0"
 }
 

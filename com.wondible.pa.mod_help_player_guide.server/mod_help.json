@@ -1,8 +1,9 @@
 {
+  "announcement": "Server mods may have help articles.  UI refresh (F5 default) if you don't see the Guide button below.",
   "articles": {
     "Mod Help Player Guide (Server)": "coui://ui/mods/mod_help_player_guide/article/mod_help_player_guide.html"
   },
   "topics": {
-    "mod help player guide": "Server mods may have help articles.  UI refresh (F5 default) to access the player guide."
+    "mod help player guide": "Server mods may have help articles.  UI refresh (F5 default) if you don't see the Guide button below."
   }
 }

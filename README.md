@@ -3,7 +3,7 @@
 1. Make the player guide accessible accessible from the game lobby (`new_game`)
 2. Add tabs to the player guide with mod articles.  Default articles are provided with the official modinfo fields, or mods can specify custom articles.
 
-There are both client and server mods.  The lobby functionality is only provided to other players (or when using only the server mod yourself) after a UI refresh, which must occur after mod loading is complete.
+There are both client and server mods.  The lobby functionality is only provided to other players (or when using only the server mod yourself) after a UI refresh, which must occur after mod loading is complete. Sometimes players get lucky and mods load before the lobby is drawn, so no refresh will be required.
 
 The official player guide is currently under development, so this mod may be volitile for a while.
 
