@@ -6,7 +6,7 @@
   "date": "2014/01/23",
   "description": "Make additional player guide topics available from supporting server mods.",
   "display_name": "Mod Help Player Guide",
-  "forum": "https://forums.uberent.com/threads/wip-client-server-mod-help-player-guide.67197/",
+  "forum": "https://forums.uberent.com/threads/rel-client-server-mod-help-player-guide.67491/",
   "identifier": "com.wondible.pa.mod_help_player_guide.client",
   "priority": 100,
   "scenes": {
@@ -18,6 +18,6 @@
     ]
   },
   "signature": "not yet implemented",
-  "version": "1.0.0"
+  "version": "1.0.1"
 }
 

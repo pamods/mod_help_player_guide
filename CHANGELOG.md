@@ -1,7 +1,12 @@
-# 1.0.0
+## 1.0.1
+
+- update UI shadows for server mod
+- fix forum url to REL topic
+
+## 1.0.0
 
 - Add chat announcement
 
-# 0.1.1
+## 0.1.1
 
 - Typo in JSON file
