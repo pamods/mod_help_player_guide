@@ -1,3 +1,7 @@
+## 1.0.2
+
+- update build version
+
 ## 1.0.1
 
 - update UI shadows for server mod
