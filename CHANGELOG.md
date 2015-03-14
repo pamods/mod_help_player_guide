@@ -1,3 +1,7 @@
+## 1.0.5
+
+- Version bump for wrong files
+
 ## 1.0.4
 
 - update UI shadows for server mod to 79317
