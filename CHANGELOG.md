@@ -1,3 +1,7 @@
+## 1.0.4
+
+- update UI shadows for server mod to 79317
+
 ## 1.0.3
 
 - update UI shadows for server mod to 78071
