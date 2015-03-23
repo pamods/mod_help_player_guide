@@ -1,3 +1,7 @@
+## 1.1.0
+
+- Server version: Remove shadows. Requires PAMM 1.1.0+
+
 ## 1.0.5
 
 - Version bump for wrong files

@@ -38,49 +38,14 @@ module.exports = function(grunt) {
             info.date = require('dateformat')(new Date(), 'yyyy/mm/dd')
             info.identifier = info.identifier.replace('client', 'server')
             info.context = 'server'
-            delete(info.scenes)
             delete(info.priority)
             console.log(info.identifier, info.version, info.date)
             return JSON.stringify(info, null, 2)
           }
         }
       },
-      new_game: {
-        files: [
-          {
-            expand: true,
-            cwd: media,
-            src: [
-              'ui/main/game/new_game/new_game.js'
-            ],
-            dest: modPath,
-          },
-        ],
-        options: {
-          process: function(contents, path) {
-            return contents.replace('// inject per scene mods', 'if (!scene_mod_list["new_game"] || scene_mod_list["new_game"].indexOf("coui://ui/mods/mod_help_player_guide/new_game.js") == -1) loadMods(["coui://ui/mods/mod_help_player_guide/new_game.js"])')
-          }
-        }
-      },
-      guide: {
-        files: [
-          {
-            expand: true,
-            cwd: media,
-            src: [
-              'ui/main/game/guide/guide.js'
-            ],
-            dest: modPath,
-          },
-        ],
-        options: {
-          process: function(contents, path) {
-            return contents.replace('// inject per scene mods', 'if (!scene_mod_list["guide"] || scene_mod_list["guide"].indexOf("coui://ui/mods/mod_help_player_guide/guide.js") == -1) loadMods(["coui://ui/mods/mod_help_player_guide/guide.js"])')
-          }
-        }
-      }
     },
-    clean: ['ui/main', modPath],
+    clean: [modPath],
   });
 
   grunt.loadNpmTasks('grunt-contrib-clean');

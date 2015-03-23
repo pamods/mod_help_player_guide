@@ -7,7 +7,7 @@ There are both client and server mods.  The lobby functionality is only provided
 
 The official player guide is currently under development, so this mod may be volitile for a while.
 
-The repo is the client mod.  A grunt task creates the server mod with modified shadow files (assuming it can find PA files in your system) in `../../server_mods/`
+The repo is the client mod.  A grunt task creates the server mod in `../../server_mods/`
 
 ## Custom Articles
 
