@@ -1,3 +1,8 @@
+## 1.1.1
+
+- Fix issue with jQuery auto-parsing JSON
+- Update articles to 82293 html header format. Every vanilla article was touched in the update, so mod articles will likely have to be updated to match.
+
 ## 1.1.0
 
 - Server version: Remove shadows. Requires PAMM 1.1.0+

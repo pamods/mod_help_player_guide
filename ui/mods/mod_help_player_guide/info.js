@@ -53,6 +53,7 @@ define(function() {
     var url = 'coui://'+mod.identifier+'/mod_help.json'
     $.ajax({
       url: url,
+      dataType: 'text',
       success: record(mod),
       error: failure(mod)
     });
