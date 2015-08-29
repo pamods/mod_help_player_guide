@@ -1,3 +1,8 @@
+## 1.1.2
+
+- Bump build number for titans
+- Note: mod articles referencing build bar images will need to be updated
+
 ## 1.1.1
 
 - Fix issue with jQuery auto-parsing JSON
